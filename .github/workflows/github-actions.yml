@@ -1,0 +1,8 @@
+name: Krass
+run-name: ${{ github.actor }} plays games
+on: [push]
+jobs:
+    explore-actions:
+        runs-on: macos-latest
+        steps:
+            - run: echo "${{github.event_name}}  . . . . ${{runner.os}}"
